@@ -4,9 +4,9 @@
  * mul - function that multiplies two number
  * @a:parameter 1
  * @b:parameter 2
- * Return: 0 or 1
+ * Return: a * b
  */
-int _isdigit(int a, int b)
+int mul(int a, int b)
 {
 	return (a * b);
 }
