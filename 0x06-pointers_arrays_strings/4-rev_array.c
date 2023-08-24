@@ -6,9 +6,17 @@
  * @n: parameter 2
  * Return: Always 0
  */
-void reverse_array(int *a, int n);
+void reverse_array(int *a, int n)
 {
-	int i;
+	int i, j;
+	int tmp;
 
-	for (i = 0 ; s1[i] != '\0' || s2[i] != '\0' i++)
+	 for (i = 0, j = n - 1; i < j; i++, j--) 
+	 {
+		 tmp = a[i];
+		  a[i] = a[j];
+		    a[j] = tmp;
+	 };
+}
+
 
