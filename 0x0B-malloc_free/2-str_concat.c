@@ -6,7 +6,7 @@
  *@s2: string to be concatenated
  *Return:Always success
  */
-char *str_concat(char *s1, char *s2);
+char *str_concat(char *s1, char *s2)
 {
 	char s1len;
 	char s2len;
