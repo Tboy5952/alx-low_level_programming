@@ -19,7 +19,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	output = calloc(nmemb, size);  /* allocate memory */
 	if (output == NULL)
+	{
 		return (NULL);
+	}
 	else
 
 		return (output);
