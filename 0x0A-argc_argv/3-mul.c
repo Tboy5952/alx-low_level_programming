@@ -21,5 +21,5 @@ int main(int agrc, char **agrv)
 	}
 	else
 		printf("error\n"); /* incae of error input */
-	return (1);
+
 }
