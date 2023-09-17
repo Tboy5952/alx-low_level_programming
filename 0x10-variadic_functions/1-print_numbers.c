@@ -4,7 +4,7 @@
 /**
 * print_numbers - Print numbers followed by a new line
 * @separator: The string to be printed between numbers (or NULL)
-*@n:The number of argument passed to the funct. 
+*b8a62c229ab2a3078f0@n:The number of argument passed to the funct. 
 */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
