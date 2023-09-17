@@ -2,7 +2,7 @@
 /**
  * _puts_recursion-function that prints a string, followed by a new line.
  * @s:string to be printed
- * Return: Akways 0 success
+ * Return: Always 0 success
  */
 void _puts_recursion(char *s)
 {
