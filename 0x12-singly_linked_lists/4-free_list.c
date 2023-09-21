@@ -1,21 +1,13 @@
-#include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
-#include "lists.h"
+
+void first(void)__attribute__((constructor));
 
 /**
- *free_list-function that frees a list_t list
- *@head:head node
+ * first - prints a sentence
  */
-void free_list(list_t *head)
-{
-	list_t *current = head;
-	list_t *next;
 
-	while (current != NULL)
-	{
-		next = current->next;
-		free(current);
-		current = next;
-	}
+void first(void)
+{
+        printf("You're beat! and yet, you must allow,\n");
+        printf("I bore my house upon my back!\n");
 }
