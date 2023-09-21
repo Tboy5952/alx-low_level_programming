@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * print_list:function that prints all the elements
+ * print_list - function that prints all the elements
  *@h:head that stores the address of first node
  *Return:node
  */
