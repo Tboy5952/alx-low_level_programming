@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- *add_node_node_end - function that adds a new node
+ * add_node_end-function that adds a new node
  *@head:head nodes
  *@str:string in nodes
  *Return:head
