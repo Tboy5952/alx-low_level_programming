@@ -1,9 +1,12 @@
 #include <stdio.h>
+
+void first(void)__attribute__((constructor));
+
 /**
- *print_message-function to print string
- *Return:Always 0
+ * first - prints a sentence
  */
-void print_message()
+
+void first(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
