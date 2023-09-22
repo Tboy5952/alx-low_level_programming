@@ -1,51 +1,58 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include "main.h"
-/**
- * Check if a string contains only digits.
- *
- * @str:param The input string to be checked
- * Return: Always  or success
- */
-int isNumeric(const char *str)
-{
-	int i = 0;
+#include <string.h>
 
-	for  (i = 0; str[i] != '\0'; i++)
+/**
+ * check_num - check string for digit
+ * @str:array str
+ * Return: always 0
+ */
+
+int check_num(char *str)
+{
+	unsigned int count;
+
+	count = 0;
+	while (count < strlen(str))
 	{
-		if (!isdigit(str[i]))
+		if (!isdigit(str[count]))
 		{
 			return (0);
 		}
+		count++;
 	}
 	return (1);
 }
-/**
- * Main program that adds valid integers from the command-line arguments.
- *@argv:parameter argv[]
- *@argc: parameter to count
- *Return: Always 0 or uccess
- */
-int main(int argc, char *argv[]) 
-{																						
-	int i;
-	int sum = 0;
-	int num;
 
-	for (i = 1 ; i < argc; i++) 
+/**
+ * main - print the name of the program
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: always 0
+ */
+
+int main(int argc, char *argv[])
+{
+	int count;
+	int str_to_int;
+	int sum = 0;
+
+	count = 1;
+	while (count < argc)
 	{
-		 if (isNumeric(argv[i])) 
-		  {
-			  num = atoi(argv[i]);
-			  sum += num;
-			  printf("%d\n", sum);
-		  }
-		 else
-		 {
-		 printf("error\n", i);
-		 return (1);
-		 }
+		if (check_num(argv[count]))
+		{
+			str_to_int = atoi(argv[count]);
+			sum += str_to_int;
+		}
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
+		count++;
 	}
+	printf("%d\n", sum);
 	return (0);
 }
