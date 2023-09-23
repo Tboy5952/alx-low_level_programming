@@ -8,8 +8,10 @@
  * Return: returns 1 if digit else 0
  */
 
-int _isdigit(int i)
+int _isdigit(int c)
 {
+	int = 0;
+
 	if (i >= '0' && i <= '9')
 		return (1);
 	return (0);
