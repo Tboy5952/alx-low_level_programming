@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
-*list_len - function that returns the number of elements in a linked
+*listint_len - function that returns the number of elements in a linked
 *@h:head nods
 *Return:length of elemement or nods
 */
