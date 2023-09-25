@@ -4,9 +4,9 @@
 #include "lists.h"
 
 /**
- * add_node_end-function that adds a new node
+ * add_nodeint_end - function that adds a new node
  *@head:head nodes
- *@str:string in nodes
+ *@n:number of nodes
  *Return:head
 */
 listint_t *add_nodeint_end(listint_t **head, const int n)
