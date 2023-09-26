@@ -16,7 +16,7 @@ typedef struct listint_s
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
-
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 void free_listint2(listint_t **head);
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
