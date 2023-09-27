@@ -30,3 +30,23 @@ size_t free_listint_safe(listint_t **head)
 	return (count);
 }
 
+/**
+ * is_visited2 - check if a node is visited
+ * @node: pointer to node
+ * @visited: list of visited
+ * @count: length of visited
+ *
+ * Return: 1 if is visited and 0 otherwise
+ */
+int is_visited2(listint_t *node, listint_t **visited, int count)
+{
+	int i = 0;
+
+	while (i < count)
+	{
+		if (node == visited[i])
+			return (1);
+		i++;
+	}
+	return (0);
+}
